@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --background-color: radial-gradient( circle farthest-corner at 10% 20%, rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );
+  --input-color: rgb(247, 222, 227);
+  --primary-color: rgb(182, 39, 70);
+  --hover-color: rgb(146, 26, 52);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-image: var(--background-color);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: var(--input-color);
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+button, a {
+  appearance: none;
+  outline: none;
+  border: none;
+  width: 180px;
+  background: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+button:hover,
+a:hover {
+background-color: var(--hover-color);
+}
+
+.qr-img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 16px 0;
+  border-radius: 8px;
+}
+/* code {
+  font-family: "Poppins", sans-serif
+} */
