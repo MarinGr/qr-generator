@@ -2,11 +2,20 @@
 
 This app built with React allows you to generate QR code from your URL or text.
 
+## Live demo
+
+React, Javascript
 
 ## Live demo
 
 You can check live demo project by clicking this link https://maringr.github.io/qr-generator/
-<<<<<<< HEAD
-=======
 
->>>>>>> 3b8766d3aa12b3c5615979f66360d70564b00151
+![QR Generator](/src/images/qr-code-screen.png)
+
+## 🛠️ Setup
+
+To run this app on your local machine follow these steps:
+
+- clone this repository
+- use `npm install` or `yarn` command to install all the dependencies
+- use `npm start` or `yarn start` command to run the app locally
